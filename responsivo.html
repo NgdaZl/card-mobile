@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #container{
+        border: 3px solid black;
+
+      
+    }
+    
+
+/* Mobile first */
+h1{
+    color: purple;
+}
+ /* ****BREAKPOINTS */
+/* Tablets >=768px */
+/* DESKTOPS MAIS ANITGOS >=992px */
+/* >=1200px - 992 - telas largas */
+/* 1440px -992px -  */
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: center;
+        color: green;
+    }
+}
+
+/* Desktops >= 920px */
+@media screen and (min-width: 920px) {
+    body{
+        background-color:rgb(25, 165, 230);
+    }
+}
+
+/* Telas Largas>= 1200px */
+@media screen and (min-width: 1200px){
+    h1{
+        text-align:left;
+    }
+    body{
+        background-color: blueviolet;
+    }
+    #container{
+        width: 100%;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+</style>
+
+</head>
+<body> 
+    
+        <div id="container">
+    <h1>Meu site Responsivo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore velit corrupti quae voluptatem, dolor deserunt quos consequatur aliquid magnam. Quaerat ad optio eaque assumenda atque, temporibus commodi ullam ipsum id.</p>
+            </div>
+
+     
+
+    
+</body>
+</html>
