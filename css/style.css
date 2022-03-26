@@ -1,0 +1,378 @@
+
+@font-face {
+    font-family: "Roboto-Regular" ;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+
+
+}
+@font-face {
+    font-family:"Reboto-Medium" ;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+/* RESET */
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    font-family: 'Roboto-Regular';
+    background-color: #e5e4e4;
+}
+/* Generics Styles */
+.status--active{
+    color: #00A5DD !important;
+}
+
+.persona1 {
+    background-image: url(../images/avatar-1606916_960_720.png);
+}
+.persona2{
+background-image: url(../images/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_1527664.jpg);
+
+}
+.persona3{
+    background-image: url(../images/pfk01.png);
+}
+.persona4{
+    background-image: url(../images/mulher.png);
+}
+
+.persona5{
+    background-image: url(../images/119-1195498_avatar-people-person-business-user-man-character-businessman.png);
+    background-color: white !important;
+}
+
+/* *****************HEADER***************/
+header{
+    
+    
+    background-color: #00a5dd;
+    background-image: linear-gradient( 180deg, #00a5dd , #46bee6, rgb(31, 130, 160));  
+    /* background-image: linear-gradient(to bottom,180deg red , yellow); direcionar, grau e deixar degrade */
+
+    color: white;
+
+    height: 150px;
+    padding: 10px 20px;
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 20px;
+}
+
+header i {
+    font-size: 20px;
+}
+.search-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50px;
+    /* border: 1px solid white; */
+}
+
+/* *******************MAIN****************/
+.page-content{
+    margin-bottom: 70px;
+}
+
+.card-box{
+    position: relative;
+    top: -30px;
+    left: 0;
+    
+    width: 90%;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: white;
+     border-radius: 5px;   /* pra deixar bordas arredondadas */
+}
+
+.card-title {
+    font-weight: bolder;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c5c3c3;
+    padding: 20px 0;
+}
+.card-perfil{
+    width: 55px;
+    height: 55px;
+     /* background-color: salmon; */
+
+     /* background-image: url(../images/pfk01.png);  */
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+.card-info{
+    width: 60%;
+}
+.card-name{
+    margin-top: 5px;
+}
+.card-status{
+      margin-top: 5px;  
+      /* color: #30d38f;     */
+      font-size: 13px;
+
+}
+.card-price{
+    font-weight: bold;
+}
+.card-perfil2{
+    width: 55px;
+    height: 55px;
+    background-color: salmon;
+    background-image: url(../images/OIP.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.card-perfil3{
+    width: 55px;
+    height: 55px;
+    background-color: salmon;
+    background-image: url(../images/avatar-1606916_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.card-perfil4{
+    width: 55px;
+    height: 55px;
+    background-color: salmon;
+    background-image: url(../images/mulher.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.classe-counter {
+    position: absolute;
+    right: -7.5px;
+    bottom: -8px;
+
+    width: 16px;
+    height: 16px;
+
+    color: white;
+    background-color: #30d38f;
+    border-radius: 50%;
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************** FOOTER****************** */
+.menu-bottom{
+
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    border-radius:20px 20px 0px 0px ;
+
+
+
+}
+.menu-item{
+    color: #e5e4e4;
+    font-size: 20px;
+}
+.status--received{
+    color: #30d38f !important;
+}
+.status--waiting{
+    color: #fdaa8b;
+}
+.bk-status--received{
+    background-color: #30d38f !important;
+}
+.bk-status--waiting{
+    background-color: #fdaa8b !important;
+}
+
+
+/**********BREAKPOINTS********  */
+
+/*********TABLETS************ */
+
+@media screen and (min-width:768px) {
+    /* Css do CABEÇALHO */
+    header{
+        padding: 10px 30px;
+        height: 200px;
+    }
+   header h1 {
+       font-size: 32px;
+   }
+   .search-box{
+       width: 60px;
+   }
+   header i{
+       font-size: 24px;
+   }
+   /* CSS DO MAIN */
+   .card-title{
+       font-size: 20px;
+   }
+   .card-perfil{
+       width: 85px;
+       height: 85px;
+   }
+   .card-counter{
+       height: 20px;
+       width: 20px;
+
+       font-size: 12px;
+   }
+   .card-name{
+       font-size: 24px;
+   }
+   .card-status{
+    font-size: 18px;
+}
+   .card-price{
+       font-size: 24px;
+   }
+  /* *FOOTER******* */
+  .menu-bottom{
+      height: 85px;
+  }
+  .menu-item{
+      font-size: 28px;
+  }
+  .card-box{
+      margin-bottom: 40px;
+  }
+  .card{
+      margin-bottom: 30px;
+  }
+}
+
+/* ******DESKTOP********** */
+@media screen and (min-width:992px){
+    .card-box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        max-width: 950px;}
+        
+
+        .card-title{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card{
+            width: 150px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            /* box-shadow: dh dv borrado cor; */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5)
+        }
+        .card-perfil{
+            width: 100px;
+            height: 100px;
+        }
+        .classe-counter{
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+        .card-info, .card-price{
+            border: none;
+        }
+        .card-info{
+            width: 90%;
+            margin-top: 20px;
+        }
+        .card-name{
+            font-size: 14px;
+            text-align: center;
+        }
+        .card-status{
+            text-align: center;
+        }
+        .card-price{
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+        /* rodape */
+        .menu-bottom{
+            right: 10px;
+            top: calc( 50% - 100px) ;
+            bottom: auto;
+            left: auto;
+            width: 30px;
+            flex-direction: column;
+            height: 200px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    .menu-item{
+        font-size: 16px;
+    }
+    footer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+/***************Full HD***** TELAS LARGAS */
+@media screen and (min-width:1200px) {
+/******* MAIN***** */
+.page-content{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:3px solid black */
+}
+}
+
+
+
+
